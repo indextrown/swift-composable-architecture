@@ -255,7 +255,7 @@ var body: some Reducer<State, Action> {
   BindingReducer()
 
   Reduce { state, action in
-    switch action
+    switch action {
     case .binding(\.displayName):
       // Validate display name
   
