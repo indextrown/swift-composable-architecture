@@ -300,5 +300,5 @@ store.send(\.binding.displayName, "Blob") {
 }
 store.send(\.binding.protectMyPosts, true) {
   $0.protectMyPosts = true
-)
+}
 ```
