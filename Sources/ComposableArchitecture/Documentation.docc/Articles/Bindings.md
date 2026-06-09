@@ -162,27 +162,27 @@ struct Settings {
   var body: some Reducer<State, Action> {
     Reduce { state, action in
       switch action {
-      case let digestChanged(digest):
+      case let .digestChanged(digest):
         state.digest = digest
         return .none
 
-      case let displayNameChanged(displayName):
+      case let .displayNameChanged(displayName):
         state.displayName = displayName
         return .none
 
-      case let enableNotificationsChanged(isOn):
+      case let .enableNotificationsChanged(isOn):
         state.enableNotifications = isOn
         return .none
 
-      case let protectMyPostsChanged(isOn):
+      case let .protectMyPostsChanged(isOn):
         state.protectMyPosts = isOn
         return .none
 
-      case let sendEmailNotificationsChanged(isOn):
+      case let .sendEmailNotificationsChanged(isOn):
         state.sendEmailNotifications = isOn
         return .none
 
-      case let sendMobileNotificationsChanged(isOn):
+      case let .sendMobileNotificationsChanged(isOn):
         state.sendMobileNotifications = isOn
         return .none
       }
