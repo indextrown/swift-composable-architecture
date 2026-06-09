@@ -243,7 +243,7 @@ Then bindings can be derived from the store using familiar `$` syntax:
 
 ```swift
 TextField("Display name", text: $store.displayName)
-Toggle("Notifications", text: $store.enableNotifications)
+Toggle("Notifications", isOn: $store.enableNotifications)
 // ...
 ```
 
