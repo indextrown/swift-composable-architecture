@@ -426,7 +426,7 @@ func dismissal() {
   let store = TestStore(
     initialState: Feature.State(
       path: StackState([
-        CounterFeature.State(count: 3)
+        .counter(CounterFeature.State(count: 3))
       ])
     )
   ) {
@@ -549,7 +549,7 @@ func dismissal() {
   let store = TestStore(
     initialState: Feature.State(
       path: StackState([
-        CounterFeature.State(count: 3)
+        .counter(CounterFeature.State(count: 3))
       ])
     )
   ) {
