@@ -411,7 +411,7 @@ struct Feature {
     Reduce { state, action in
       // Logic and behavior for core feature.
     }
-    .forEach(\.path, action: \.path)
+    .forEach(\.path, action: \.path) { Path.body }
   }
 }
 ```
