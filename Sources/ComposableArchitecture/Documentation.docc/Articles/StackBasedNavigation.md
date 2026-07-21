@@ -430,7 +430,7 @@ func dismissal() {
       ])
     )
   ) {
-    CounterFeature()
+    Feature()
   }
 }
 ```
@@ -553,7 +553,7 @@ func dismissal() {
       ])
     )
   ) {
-    CounterFeature()
+    Feature()
   }
   store.exhaustivity = .off
 
