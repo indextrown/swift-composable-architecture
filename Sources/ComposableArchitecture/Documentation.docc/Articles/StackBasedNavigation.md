@@ -266,7 +266,7 @@ methods, such as ``StackState/popLast()``, ``StackState/pop(from:)`` and more:
 
 ```swift
 case .closeButtonTapped:
-  state.popLast()
+  state.path.popLast()
   return .none
 ```
 
